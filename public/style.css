@@ -1,0 +1,10 @@
+#btn{
+    animation-name: color-animaiton;
+    animation-duration: 5s;
+}
+
+@keyframes color-animaiton {
+    100%{
+        color: red;
+    }
+}
