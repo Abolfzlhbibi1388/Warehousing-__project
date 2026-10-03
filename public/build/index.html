@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/build/tailwind.css">
+    <title>پروژه انبارداری</title>
+</head>
+
+<body>
+
+    <div class="bg-slate-800">
+
+        <!-- App-Inventory -->
+        <div class="h-12 mb-6 flex items-center justify-center gap-x-4 bg-slate-700">
+            <h1 class="text-xl font-bold text-slate-300">Inventory App using tailwind & Js</h1>
+            <span
+                class="flex items-center justify-center w-7 h-7 rounded-full text-slate-300 border-2 border-slate-300 font-bold">7</span>
+        </div>
+
+        <!-- App-Content -->
+        <div class="container max-w-lg mx-auto">
+
+            <!-- Categoty-Form -->
+            <div class="mb-6">
+                <h2 class="text-xl text-slate-300 font-bold mb-2">Add New Category</h2>
+                <form class="bg-slate-700 p-4 rounded-xl flex flex-col gap-y-4">
+                    <div>
+                        <label for="categoty-title" class="block text-slate-400 mb-2">title :</label>
+                        <input type="text" name="categoty-title" id="categoty-title"
+                            class="bg-transparent rounded-xl border border-slate-500 text-slate-400 p-2">
+                    </div>
+                    <div>
+                        <label for="categoty--description" class="block text-slate-400 mb-2">description :</label>
+                        <textarea name="categoty--description" id="categoty--description"
+                            class="bg-transparent rounded-xl border border-slate-500 text-slate-400 p-3 w-full"></textarea>
+                    </div>
+                    <div class="w-full flex gap-x-2">
+                        <button class="flex-1 p-2 border rounded-lg border-slate-400 text-slate-400">Cancle</button>
+                        <button id="add-new-category"
+                            class="flex-1 p-2 border rounded-lg border-slate-400 bg-slate-400 font-bold text-[15px] text-white">Add
+                            new
+                            Category</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Product-Form -->
+            <div class="mb-6">
+                <h2 class="text-xl text-slate-300 font-bold mb-2">Add New Product</h2>
+                <form class="bg-slate-700 p-4 rounded-xl flex flex-col gap-y-4">
+                    <div>
+                        <label class="block text-slate-400 mb-2" for="product-title">product title :</label>
+                        <input class="bg-transparent rounded-xl border border-slate-500 text-slate-400 p-2 w-auto"
+                            type="text" id="product-title" name="product-title">
+                    </div>
+                    <div>
+                        <label class="block text-slate-400 mb-2" for="product-quantity">quantity :</label>
+                        <input class="bg-transparent rounded-xl border border-slate-500 text-slate-400 p-2 w-auto"
+                            type="number" id="product-quantity" name="product-quantity">
+                    </div>
+                    <div>
+                        <label class="block text-slate-400 mb-2" for="product-category">Category :</label>
+                        <select class="bg-transparent text-slate-400 rounded-xl w-full border border-slate-500 p-2"
+                            name="product-category" id="product-category">
+                            
+                        </select>
+                    </div>
+                    <button id="add-new-product"
+                        class="flex-1 p-2 border rounded-lg border-slate-400 bg-slate-400 font-bold text-[15px] text-white">Add
+                        new
+                        product</button>
+                </form>
+            </div>
+
+            <!-- product list -->
+            <h2 class="text-xl text-slate-300 font-bold mb-2 block">product-List</h2>
+
+            <div id="products-list">
+
+            </div>
+
+            <div class="h-20"></div>
+
+        </div>
+
+    </div>
+
+    <script src="/src/js/app.js" type="module"></script>
+</body>
+
+</html>
